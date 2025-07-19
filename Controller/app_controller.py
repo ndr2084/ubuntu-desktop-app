@@ -1,4 +1,3 @@
-from Repo.app_repo import AppRepo
 from Service.app_service import AppService
 
 class AppController:

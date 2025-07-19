@@ -6,8 +6,8 @@ APPLICATION_DICT = {
     'pycharm' : './Apps/pycharm-2025.1.3.1/bin/pycharm'
     }
 class AppService:
-    def __init__(self, repo: AppRepo):
-        self.repo = repo
+    def __init__(self, app_repo: AppRepo):
+        self.repo = app_repo
         self.DEFAULT_DIRECTORY = os.path.expanduser("~")
         os.chdir(self.DEFAULT_DIRECTORY)
 

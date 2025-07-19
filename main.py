@@ -1,6 +1,12 @@
-import os
-import subprocess
-from Gui.app import run_gui as entry
+import sys
+from PySide6 import QtCore, QtWidgets, QtGui
+from Gui.app import MyWidget
 
 if __name__ == "__main__":
-    entry()
+    app = QtWidgets.QApplication([])
+
+    widget = MyWidget()
+    widget.resize(800, 600)
+    widget.show()
+
+    sys.exit(app.exec())
